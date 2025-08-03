@@ -9,7 +9,8 @@
                    name="My Kodi Repository">
             <info compressed="false">https://raw.githubusercontent.com/nidaltiti/repository.myrepo/master/addons.xml</info>
             <checksum>https://raw.githubusercontent.com/nidaltiti/repository.myrepo/master/addons.xml.md5</checksum>
-            <datadir zip="true">https://raw.githubusercontent.com/nidaltiti/repository.myrepo/master/zips</datadir>
+            <datadir zip="true">https://raw.githubusercontent.com/nidaltiti/repository.myrepo/master/zips/</datadir>
+
         </extension>
         <extension point="xbmc.addon.metadata">
             <summary lang="en">My Kodi Add-on Repository</summary>
@@ -19,18 +20,25 @@
     </addon>
 
     <!-- Requests Toolbelt Dependency -->
-    <addon id="script.module.requests-toolbelt"
-           name="Requests Toolbelt"
-           version="1.0.0"
-           provider-name="nidaltiti">
-        <extension point="xbmc.python.module" library="lib"/>
-        <extension point="xbmc.addon.metadata">
-            <summary lang="en">Requests Toolbelt for Python</summary>
-            <description lang="en">A Kodi Python module providing requests-toolbelt for HTTP utilities.</description>
-            <platform>all</platform>
-        </extension>
-    </addon>
-
-    <!-- Example Main Add-on -->
-    
+ 
+<addon id="script.module.requests-toolbelt" name="requests-toolbelt" version="1.0.0" provider-name="Ian Cordasco, Cory Benfield">
+	<requires>
+		<import addon="script.module.requests" version="2.0.1"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib"/>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en_GB">A utility belt for advanced users of python-requests</summary>
+		<description lang="en_GB">Packed for KODI from https://pypi.org/project/requests-toolbelt/</description>
+		<platform>all</platform>
+		<language/>
+		<license>Apache Software License (Apache 2.0)</license>
+		<forum/>
+		<website/>
+		<source>https://toolbelt.readthedocs.io/</source>
+		<email/>
+		<assets>
+			<icon>resources/icon.png</icon>
+		</assets>
+	</extension>
+</addon>
 </addons>
