@@ -9,7 +9,7 @@
                    name="My Kodi Repository">
             <info compressed="false">https://raw.githubusercontent.com/nidaltiti/repository.myrepo/master/addons.xml</info>
             <checksum>https://raw.githubusercontent.com/nidaltiti/repository.myrepo/master/addons.xml.md5</checksum>
-            <datadir zip="true">https://raw.githubusercontent.com/nidaltiti/repository.myrepo/master/</datadir>
+            <datadir zip="true">https://raw.githubusercontent.com/nidaltiti/repository.myrepo/master/zips</datadir>
         </extension>
         <extension point="xbmc.addon.metadata">
             <summary lang="en">My Kodi Add-on Repository</summary>
