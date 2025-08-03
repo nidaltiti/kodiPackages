@@ -32,19 +32,5 @@
     </addon>
 
     <!-- Example Main Add-on -->
-    <addon id="plugin.video.myaddon"
-           name="My Addon"
-           version="1.0.0"
-           provider-name="nidaltiti">
-        <requires>
-            <import addon="xbmc.python" version="3.0.0"/>
-            <import addon="script.module.requests-toolbelt" version="1.0.0"/>
-        </requires>
-        <extension point="xbmc.python.pluginsource" library="main.py"/>
-        <extension point="xbmc.addon.metadata">
-            <summary lang="en">My Video Add-on</summary>
-            <description lang="en">Example video add-on that uses requests-toolbelt.</description>
-            <platform>all</platform>
-        </extension>
-    </addon>
+    
 </addons>
