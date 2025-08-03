@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+    <!-- Repository Information -->
+    <addon id="repository.myrepo"
+           name="My Kodi Repository"
+           version="1.0.0"
+           provider-name="nidaltiti">
+        <extension point="xbmc.addon.repository"
+                   name="My Kodi Repository">
+            <info compressed="false">https://raw.githubusercontent.com/nidaltiti/repository.myrepo/master/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/nidaltiti/repository.myrepo/master/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/nidaltiti/repository.myrepo/master/</datadir>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+            <summary lang="en">My Kodi Add-on Repository</summary>
+            <description lang="en">Repository containing my Kodi add-ons.</description>
+            <platform>all</platform>
+        </extension>
+    </addon>
+
+    <!-- Requests Toolbelt Dependency -->
+    <addon id="script.module.requests-toolbelt"
+           name="Requests Toolbelt"
+           version="1.0.0"
+           provider-name="nidaltiti">
+        <extension point="xbmc.python.module" library="lib"/>
+        <extension point="xbmc.addon.metadata">
+            <summary lang="en">Requests Toolbelt for Python</summary>
+            <description lang="en">A Kodi Python module providing requests-toolbelt for HTTP utilities.</description>
+            <platform>all</platform>
+        </extension>
+    </addon>
+
+    <!-- Example Main Add-on -->
+    <addon id="plugin.video.myaddon"
+           name="My Addon"
+           version="1.0.0"
+           provider-name="nidaltiti">
+        <requires>
+            <import addon="xbmc.python" version="3.0.0"/>
+            <import addon="script.module.requests-toolbelt" version="1.0.0"/>
+        </requires>
+        <extension point="xbmc.python.pluginsource" library="main.py"/>
+        <extension point="xbmc.addon.metadata">
+            <summary lang="en">My Video Add-on</summary>
+            <description lang="en">Example video add-on that uses requests-toolbelt.</description>
+            <platform>all</platform>
+        </extension>
+    </addon>
+</addons>
