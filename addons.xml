@@ -20,12 +20,12 @@
     </addon>
 
     <!-- Dependency Add-on -->
-    <addon id="script.module.mydependency"
+     <addon id="script.module.mydependency"
            name="My Dependency Module"
            version="1.0.0"
            provider-name="hi man">
         <requires>
-            <import addon="xbmc.python" version="3.0.0"/>
+            <import addon="xbmc.python" version="3.0.0" />
         </requires>
         <extension point="xbmc.python.module" library="lib"/>
         <extension point="xbmc.addon.metadata">
