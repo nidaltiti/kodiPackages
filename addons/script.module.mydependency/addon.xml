@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.module.mydependency"
+       name="My Dependency Module"
+       version="1.0.0"
+       provider-name="YourName">
+
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+    </requires>
+
+    <extension point="xbmc.python.module" library="lib"/>
+    
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Sample Kodi dependency module</summary>
+        <description lang="en">
+            This is a sample Kodi dependency add-on that can be imported by other add-ons.
+        </description>
+        <platform>all</platform>
+    </extension>
+
+</addon>

@@ -1,44 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-    <!-- Repository Information -->
-    <addon id="repository.myrepo"
-           name="My Kodi Repository"
+    <addon id="script.module.mydependency"
+           name="My Dependency Module"
            version="1.0.0"
-           provider-name="nidaltiti">
-        <extension point="xbmc.addon.repository"
-                   name="My Kodi Repository">
-            <info compressed="false">https://raw.githubusercontent.com/nidaltiti/repository.myrepo/master/addons.xml</info>
-            <checksum>https://raw.githubusercontent.com/nidaltiti/repository.myrepo/master/addons.xml.md5</checksum>
-            <datadir zip="true">https://raw.githubusercontent.com/nidaltiti/repository.myrepo/master/zips/</datadir>
-
-        </extension>
+           provider-name="YourName">
+        <requires>
+            <import addon="xbmc.python" version="3.0.0"/>
+        </requires>
+        <extension point="xbmc.python.module" library="lib"/>
         <extension point="xbmc.addon.metadata">
-            <summary lang="en">My Kodi Add-on Repository</summary>
-            <description lang="en">Repository containing my Kodi add-ons.</description>
+            <summary lang="en">Sample Kodi dependency module</summary>
+            <description lang="en">This is a sample Kodi dependency add-on.</description>
             <platform>all</platform>
         </extension>
     </addon>
-
-    <!-- Requests Toolbelt Dependency -->
- 
-<addon id="script.module.requests-toolbelt" name="requests-toolbelt" version="1.0.0" provider-name="Ian Cordasco, Cory Benfield">
-	<requires>
-		<import addon="script.module.requests" version="2.0.1"/>
-	</requires>
-	<extension point="xbmc.python.module" library="lib"/>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en_GB">A utility belt for advanced users of python-requests</summary>
-		<description lang="en_GB">Packed for KODI from https://pypi.org/project/requests-toolbelt/</description>
-		<platform>all</platform>
-		<language/>
-		<license>Apache Software License (Apache 2.0)</license>
-		<forum/>
-		<website/>
-		<source>https://toolbelt.readthedocs.io/</source>
-		<email/>
-		<assets>
-			<icon>resources/icon.png</icon>
-		</assets>
-	</extension>
-</addon>
 </addons>
