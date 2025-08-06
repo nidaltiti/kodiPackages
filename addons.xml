@@ -8,6 +8,7 @@
            <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.mydependency" version="1.0.0"/>
+         <import addon="script.module.requests-toolbelt" version="1.0.0"/>
     </requires>
         <extension point="xbmc.addon.repository" name="My Repo">
             <dir>
