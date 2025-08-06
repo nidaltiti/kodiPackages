@@ -65,8 +65,8 @@
     </extension>
 
 </addon>
-<addon> 
-    <addon id="script.module.requests-toolbelt" name="requests-toolbelt" version="1.0.0" provider-name="Ian Cordasco, Cory Benfield">
+
+<addon id="script.module.requests-toolbelt" name="requests-toolbelt" version="1.0.0" provider-name="Ian Cordasco, Cory Benfield">
 	<requires>
 		<import addon="script.module.requests" version="2.0.1"/>
 	</requires>
@@ -85,6 +85,6 @@
 			<icon>resources/icon.png</icon>
 		</assets>
 	</extension>
-</addon></addon>
+</addon>
 <addon> x344</addon>
 </addons>
