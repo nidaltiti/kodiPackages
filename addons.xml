@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
     <!-- Repo Add-on -->
-    <addon id="repository.myrepo"
-           name="My Repository"
+    <addon id="repository.repo.Package"
+           name="package module Repository"
            version="1.0.0"
-           provider-name="hi man">
+           provider-name="nidaltiti">
            <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.mydependency" version="1.0.0"/>
          <import addon="script.module.requests-toolbelt" version="1.0.0"/>
-         <import addon="script.module.cloudscraper" version="1.2.60"/>
+         <import addon="script.module.cloudscraper" />
     </requires>
         <extension point="xbmc.addon.repository" name="My Repo">
             <dir>
@@ -31,7 +31,7 @@
      <addon id="script.module.mydependency"
            name="My Dependency Module"
            version="1.0.0"
-           provider-name="hi man">
+           provider-name="nidaltiti">
         <requires>
             <import addon="xbmc.python" version="3.0.0" />
         </requires>
