@@ -22,5 +22,9 @@
             <summary lang="en">My Kodi Repository</summary>
             <description lang="en">Contains my add-ons and dependencies</description>
             <platform>all</platform>
+            <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
         </extension>
     </addon>

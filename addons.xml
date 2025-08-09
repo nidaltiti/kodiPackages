@@ -7,10 +7,10 @@
            provider-name="nidaltiti">
            <requires>
         <import addon="xbmc.python" version="3.0.0"/>
-        
          <import addon="script.module.requests-toolbelt" version="1.0.0"/>
          <import addon="script.module.cloudscraper" />
           <import addon="script.module.resolveurl" />
+         
     </requires>
         <extension point="xbmc.addon.repository" name="My Repo">
             <dir>
@@ -25,6 +25,10 @@
             <summary lang="en">My Kodi Repository</summary>
             <description lang="en">Contains my add-ons and dependencies</description>
             <platform>all</platform>
+            <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
         </extension>
     </addon>
 
