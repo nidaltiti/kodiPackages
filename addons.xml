@@ -7,7 +7,7 @@
            provider-name="nidaltiti">
            <requires>
         <import addon="xbmc.python" version="3.0.0"/>
-        <import addon="script.module.mydependency" version="1.0.0"/>
+        
          <import addon="script.module.requests-toolbelt" version="1.0.0"/>
          <import addon="script.module.cloudscraper" />
           <import addon="script.module.resolveurl" />
@@ -27,47 +27,6 @@
             <platform>all</platform>
         </extension>
     </addon>
-
-    <!-- Dependency Add-on -->
-     <addon id="script.module.mydependency"
-           name="My Dependency Module"
-           version="1.0.0"
-           provider-name="nidaltiti">
-        <requires>
-            <import addon="xbmc.python" version="3.0.0" />
-        </requires>
-        <extension point="xbmc.python.module" library="lib"/>
-        <extension point="xbmc.addon.metadata">
-            <summary lang="en">Sample Kodi dependency module</summary>
-            <description lang="en">This is a sample Kodi dependency add-on.</description>
-            <platform>all</platform>
-        </extension>
-    </addon>
- 
-<addon id="plugin.video.myaddon"
-       name="My Video Addon"
-       version="1.0.0"
-       provider-name="hi man">
-
-    <requires>
-        <import addon="xbmc.python" version="3.0.0"/>
-        <import addon="script.module.mydependency" version="1.0.0"/>
-        <import addon="script.module.requests-toolbelt" version="1.0.0"/>
-    </requires>
-
-    <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>video</provides>
-    </extension>
-
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en">Simple Video Addon that uses mydependency</summary>
-        <description lang="en">
-            This is a test video addon that imports script.module.mydependency.
-        </description>
-        <platform>all</platform>
-    </extension>
-
-</addon>
 
 <addon id="script.module.requests-toolbelt" name="requests-toolbelt" version="1.0.0" provider-name="Ian Cordasco, Cory Benfield">
 	<requires>
