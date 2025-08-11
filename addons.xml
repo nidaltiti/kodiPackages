@@ -11,6 +11,7 @@
          <import addon="script.module.cloudscraper" />
           <import addon="script.module.resolveurl" />
            <import addon="repository.github" optional="true" />
+            <import addon="script.module.requests-cache" version="0.5.2" />
          
     </requires>
         <extension point="xbmc.addon.repository" name="My Repo">
