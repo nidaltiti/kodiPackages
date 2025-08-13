@@ -8,7 +8,7 @@ These packages provide additional libraries and tools to extend Kodi functionali
     <info compressed="false">https://raw.githubusercontent.com/nidaltiti/kodiPackages/master/addons.xml</info>
     <checksum>https://raw.githubusercontent.com/nidaltiti/kodiPackages/master/addons.xml.md5</checksum>
     <datadir zip="true">https://raw.githubusercontent.com/nidaltiti/kodiPackages/master/addons/zips</datadir>  
-</dir>
+</dir>""
 ## Installation Steps
 
 1. Click **Add-on repository**  
